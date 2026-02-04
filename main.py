@@ -18,7 +18,7 @@ if response.status_code == 200:
     print('\nАбзацы текста:')
     for paragraph in soup.find_all('p'):
         text = paragraph.text.strip()
-        if text:  # Пропускаем пустые абзацы
+        if text:
             print(text)
 
 else:
